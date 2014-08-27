@@ -1,0 +1,58 @@
+<!doctype html>
+<html style="background: black">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lozenge</title>
+    <style type="text/css">
+      @-webkit-keyframes moveBackAndForth {
+        0%   { transform: translateZ(-200px); }
+        100% { transform: translateZ(-4000px); }
+      }
+      @-webkit-keyframes rotateY {
+        0%   { transform: translateZ(-100px) rotateY(0deg); }
+        100% { transform: translateZ(-100px) rotateY(360deg); }
+      }
+
+      .box {
+        transform-style: preserve-3d;
+        -webkit-animation: moveBackAndForth 5s ease infinite alternate;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        color: white;
+      }
+
+      .box--left {
+        margin-left: -200px;
+        background: green;
+      }
+
+      .box--right {
+        -webkit-animation-delay: 5s;
+        margin-left: 0;
+        background: blue;
+      }
+
+      .rotating-text {
+        transform-style: preserve-3d;
+        -webkit-animation: rotateY 5s linear infinite;
+        backface-visibility: visible;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        margin-top: -50px;
+        left: 0;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="App"></div>
+    <script src="build/index.js"></script>
+  </body>
+</html>

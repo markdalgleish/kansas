@@ -1,0 +1,19 @@
+{
+  "name": "kansas",
+  "version": "0.0.0",
+  "description": "Experimental stereoscopic rendering for React components",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t reactify lib/index.js > public/build/index.js",
+    "start": "npm run build && node server"
+  },
+  "author": "Mark Dalgleish",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^4.2.3",
+    "express": "^4.6.1",
+    "react": "^0.9.0",
+    "reactify": "^0.14.0"
+  }
+}
