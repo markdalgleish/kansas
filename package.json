@@ -14,6 +14,7 @@
     "browserify": "^4.2.3",
     "express": "^4.6.1",
     "react": "^0.9.0",
-    "reactify": "^0.14.0"
+    "reactify": "^0.14.0",
+    "three": "^0.68.0"
   }
 }
