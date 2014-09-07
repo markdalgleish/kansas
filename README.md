@@ -4,6 +4,8 @@ Experimental stereoscopic rendering for [React](http://facebook.github.io/react/
 
 Tested on Chrome for Android with [Google Cardboard](https://cardboard.withgoogle.com/) on a [Nexus 5](http://www.google.com/nexus/5/).
 
+## Try it out
+
 ```bash
 $ npm install
 $ npm run start
